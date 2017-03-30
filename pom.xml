@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.github.bobi4597</groupId>
-  <artifactId>concurrent-counter</artifactId>
+  <artifactId>concurrency</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
@@ -13,8 +13,8 @@
     <version>1.5.2.RELEASE</version>
   </parent>
 
-  <name>concurrent-counter</name>
-  <url>https://github.com/bobi4597/concurrent-counter</url>
+  <name>concurrency</name>
+  <url>https://github.com/bobi4597/concurrency</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -41,7 +41,7 @@
 
   <build>
     <!-- The name of the resulting JAR file after packaging the application. -->
-    <finalName>concurrent-counter</finalName>
+    <finalName>concurrency</finalName>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
