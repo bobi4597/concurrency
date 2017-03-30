@@ -15,7 +15,7 @@ public class Producer {
 
   public void produce(int producedElement) {
     synchronized (lock) {
-      if (buffer.isFull()) {
+      while (buffer.isFull()) {
         try {
           lock.wait();
         } catch (InterruptedException e) {
@@ -23,7 +23,6 @@ public class Producer {
         }
       }
       buffer.addElement(producedElement);
-      //System.out.println("   " + Thread.currentThread().getName() + ": " + producedElement);
       lock.notify();
     }
   }
